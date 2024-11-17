@@ -25,11 +25,5 @@ public class GuestBook {
 
     private LocalDateTime localDateTime;
 
-    @PrePersist
-    protected void createLocalDateTime(){
-        if(this.localDateTime == null){
-            this.localDateTime = LocalDateTime.now();
-        }
-    }
 
 }
